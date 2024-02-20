@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--My wab logo-->
+    <link rel="icon" href="https://i.ibb.co/f2L8Gng/20220716-000953.png" />
+    <title>Translate it || Shivamzee</title>
+
+    <!-- link css file -->
+    <link rel="stylesheet" href="/translate.css" />
+
+    <!-- Font awesome CDN link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="textInput-box">
+          <textarea
+            id="originalText"
+            class="from-text translate"
+            placeholder="Enter text"
+          ></textarea>
+          <textarea
+            id="translatedText"
+            class="to-text"
+            placeholder="Translation"
+            readonly
+            disabled
+          ></textarea>
+        </div>
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i class="fas fa-volume-up"></i>
+              <i class="fas fa-copy"></i>
+            </div>
+          </li>
+          <button onclick="clickbtnTotranslateLang()" class="translateLangbtn">
+            Translate
+          </button>
+          <li class="row to">
+            <div class="icons">
+              <i class="fas fa-volume-up"></i>
+              <i class="fas fa-copy"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="selectLangbtn">
+        <div id="google_translate_element"></div>
+      </button>
+    </div>
+
+    <script src="/language.js"></script>
+
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>
